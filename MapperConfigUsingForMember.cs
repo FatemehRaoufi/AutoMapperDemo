@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 namespace AutoMapperDemo
 {
-    public class MapperConfigForMember
+    public class MapperConfigUsingForMember
     {
         public static Mapper InitializeAutomapper()
         {
@@ -9,7 +9,7 @@ namespace AutoMapperDemo
             var config = new MapperConfiguration(cfg =>
             {
                 //Configuring Employee and EmployeeDTO
-                cfg.CreateMap<Employee, EmployeeDTOForMember>()
+                cfg.CreateMap<Employee, EmployeeDTOUsingForMember>()
 
                 //Provide Mapping Configuration of FullName and Name Property
                 .ForMember(dest => dest.FullName, act => act.MapFrom(src => src.Name))

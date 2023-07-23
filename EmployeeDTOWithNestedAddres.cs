@@ -2,14 +2,13 @@
 
 namespace AutoMapperDemo
 {
-
-    public class Employee
+    public class EmployeeDTOWithNestedAddres
     {
-        public int ID { get; set; }
         public string Name { get; set; }
         public int Salary { get; set; }
-        public string Address { get; set; }
         public string Department { get; set; }
-        public string Email { get; set; }
+
+        public AddressDTO Address { get; set; }
     }
+
 }
